@@ -5,6 +5,7 @@ const projectsData = require("./data/projects.json");
 
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.use(logger("dev"));
 app.use(express.static("public"));
