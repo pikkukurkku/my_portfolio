@@ -21,16 +21,27 @@
             <div class="text-xl font-bold">My Portfolio</div>
           </a>
           <ul class="flex space-x-4">
-            <li><a href="/" class="hover:text-blue-500">Home</a></li>
             <li>
               <a
-                href="https://www.linkedin.com/school/ironhack"
+                href="https://www.canva.com/design/DAF_V1Xlh_I/56MhA4jE_Df2k8IvHhLq4Q/view?utm_content=DAF_V1Xlh_I&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                target="_blank"
+                class="hover:text-blue-500"
+                >CV</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/natalia-ogorek--web-development/"
+                target="_blank"
                 class="hover:text-blue-500"
                 >LinkedIn</a
               >
             </li>
             <li>
-              <a href="https://github.com" class="hover:text-blue-500"
+              <a
+                href="https://github.com/pikkukurkku"
+                target="_blank"
+                class="hover:text-blue-500"
                 >GitHub</a
               >
             </li>
@@ -40,28 +51,62 @@
     </nav>
 
     <main class="container mx-auto mt-20 px-4">
-      <div id="projectDetailsContainer" class="bg-white shadow-lg rounded p-6 mb-10">
-          <h3 class="text-2xl font-bold mb-4"><%= project.title %></h3>
-          <img src="<%= project.image %>" alt="<%= project.title %>" class="mb-4">
-          <p class="mb-4"><%= project.description %></p>
-          <p class="mb-4"><%= project.detailedDescription %></p>
-          <ul class="mt-2 mb-4">
-            <% project.techStack.forEach((tech) => { %>
-              <li class="inline-block text-white px-2 py-1 rounded mr-2 mt-2 tag"><%= tech %></li>
-            <% }); %>
-          </ul>
-          <p class="mb-4">Demo materials:</p>
-          <video width="320" height="240" controls>
-            <source src="<%= project.demo1 %>" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+      <div
+        id="projectDetailsContainer"
+        class="bg-white shadow-lg rounded p-6 mb-10"
+      >
+        <h3 class="text-2xl font-bold mb-4"><%= project.title %></h3>
+        <img
+          src="<%= project.image %>"
+          alt="<%= project.title %>"
+          width="<%= project.imageWidth %>"
+          height="<%= project.imageHeight %>"
+          style="max-width: 100%"
+        />
+        <br />
+        <p class="mb-4"><%= project.description %></p>
+        <p class="mb-4"><%= project.detailedDescription %></p>
+        <ul class="mt-2 mb-4">
+          <% project.techStack.forEach((tech) => { %>
+          <li class="inline-block text-white px-2 py-1 rounded mr-2 mt-2 tag">
+            <%= tech %>
+          </li>
+          <% }); %>
+        </ul>
+        <br />
+        <p class="mb-4">Demo materials:</p>
+        <video
+          width="<%= project.videoWidth %>"
+          height="<%= project.videoHeight %>"
+          style="max-width: 100%"
+          controls
+        >
+          <source src="<%= project.demo1 %>" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <br />
+        <img
+          src="<%= project.demo2 %>"
+          alt="<%= project.demo2 %>"
+          width="<%= project.demo2Width %>"
+          height="<%= project.demo2Height %>"
+          class="mb-10"
+        />
+        <br />
+        <img
+          src="<%= project.demo3 %>"
+          alt="<%= project.demo3 %>"
+          width="<%= project.demo3Width %>"
+          height="<%= project.demo3Height %>"
+          class="mb-10"
+        />
       </div>
-  </main>
+    </main>
 
     <!-- Footer -->
     <footer class="gradient-footer bg-gray-800 text-white py-4 mt-10">
       <div class="container mx-auto text-center">
-        <p class="text-xl font-medium">LAB | Express Basic Server</p>
+        <p class="mt-2 opacity-70 text-sm">Express Basic Server</p>
         <p class="mt-2 opacity-70 text-sm">© 2023 Ironhack</p>
       </div>
     </footer>
