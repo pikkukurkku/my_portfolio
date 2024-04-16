@@ -1,3 +1,4 @@
+require("dotenv").config();
 const logger = require("morgan");
 const express = require("express");
 const projectsData = require("./data/projects.json");
@@ -38,4 +39,6 @@ app.get("*", (request, response, next) => {
   response.status(404).sendFile(__dirname + "/views/not-found.html");
 });
 
-app.listen(5005, () => console.log("My first app listening on port 5005! "));
+app.listen(PORT, () => {
+  console.log(`JSON Server is running at port ${PORT}`);
+});
