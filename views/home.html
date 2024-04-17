@@ -53,21 +53,34 @@
             alt="Your Name"
             class="rounded-full w-52 h-52 md:mr-8"
           />
-          <br>
+          <br />
           <div>
             <h2 class="text-2xl font-bold mb-4">About Me</h2>
-            <p>
-              Hi. I'm Natalia Ogórek and I'm a Full Stack Web Developer 🚀</p>
-              <br>
+            <p>Hi. I'm Natalia Ogórek and I'm a Full Stack Web Developer 🚀</p>
+            <br />
 
-              <p>My top skills in this field are: MERN, HTML, CSS, JavaScript, Git & GitHub, Typescript, node.js, React, Mongo DB, Mongo Atlas, Express.js.</p>
-              <br>
-              <p>In addition to my technical proficiency, I bring to the table a robust set of soft skills. I pride myself on my critical thinking abilities, meticulous attention to detail, adept time management, and a communication style rooted in proactive problem-solving.</p>
-<p>I am actively pursuing a career in web development.</p>
-<br>
-🎓Graduate of a Full Stack Web Developer certification December-March 2024 with Ironhack Berlin
-<br>
-🌎Lived in Finland, Poland, Netherlands and Slovenia. Since 10 years in Berlin, Germany
+            <p>
+              My top skills in this field are: MERN, HTML, CSS, JavaScript, Git
+              & GitHub, Typescript, node.js, React, Mongo DB, Mongo Atlas,
+              Express.js.
+            </p>
+            <br />
+            <p>
+              In addition to my technical proficiency, I bring to the table a
+              robust set of soft skills. I pride myself on my critical thinking
+              abilities, meticulous attention to detail, adept time management,
+              and a communication style rooted in proactive problem-solving.
+            </p>
+            <br />
+            <p>
+              🎓Graduate of a Full Stack Web Developer certification
+              December-March 2024 with Ironhack Berlin
+            </p>
+            <br />
+            <p>
+              🌎Lived in Finland, Poland, Netherlands and Slovenia. Since 10
+              years in Berlin, Germany
+            </p>
           </div>
         </div>
       </section>
@@ -75,7 +88,7 @@
       <!-- My Projects Section -->
       <section class="mt-10">
         <h2 class="text-2xl font-bold">My Projects</h2>
-        <br>
+        <br />
         <div
           id="projectsContainer"
           class="mt-4 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
@@ -115,7 +128,7 @@
                           }</h3>
                           <div class="w-full h-56 animate-pulse rounded mb-4 image-loader gradient-iron" data-image="${
                             project.image
-                          }"></div>
+                          }" ></div>
                           <p>${project.description}</p>
                           <br>
                           <p>${project.responsive}</p>
@@ -132,10 +145,10 @@
                           <a href="${
                             project.github
                           }" class="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Github</a>
-                          <a href="/projectdetails?id=${project.id}" class="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Details</a>
-                          <a href="${
-                            project.deployed
-                          }" class="text-green-500 hover:underline" target="_blank" rel="noopener noreferrer">Live Version</a>
+                          <a href="/projectdetails?id=${
+                            project.id
+                          }" class="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Details</a>
+                         
                       </div>
                   </div>
                   `;

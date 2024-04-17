@@ -84,3 +84,15 @@ button.bg-blue-500:hover {
 #errorContainer {
   min-height: 100vh;
 }
+/* Add this CSS to your styles.css file */
+.image-container {
+  width: 100%; /* Set the width of the container to 100% of its parent */
+  height: 200px; /* Set a fixed height for the container */
+  overflow: hidden; /* Hide any image overflow */
+}
+
+.image-container img {
+  width: 100%; /* Set the width of the image to 100% of its parent container */
+  height: 100%; /* Set the height of the image to 100% of its parent container */
+  object-fit: cover; /* This will make the image cover the entire container */
+}
